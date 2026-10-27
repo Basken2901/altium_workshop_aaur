@@ -1,0 +1,96 @@
+# -------------------------------
+# Project repo .gitignore (hardware + software)
+# -------------------------------
+
+# === General OS/editor noise ===
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.tmp
+*.TMP
+*.log
+*.LOG
+*.bak
+*.Backup*
+*.swp
+*.swo
+
+# === Releases / archives (generated) ===
+release/
+*.zip
+*.7z
+
+# === Altium generated/cache ===
+**/Outputs/**
+**/Project Outputs/**
+**/ProjectOutputs/**
+**/Project Outputs for */
+**/ProjectOutputs for */
+**/Project Logs for */
+**/Project Logs/
+**/ProjectLogs/
+**/ProjectLogs for */
+**/History/**
+**/__Previews/**
+**/__Recovery/**
+**/Compiled/**
+**/Generated/**
+**/Simulation Output/**
+**/*.PrjPcbStructure
+
+# CAM/exports (we generate per release, not commit)
+*.gbr
+*.gtl
+*.gbl
+*.gts
+*.gbs
+*.gto
+*.gbo
+*.gko
+*.gml
+*.drl
+*.xln
+*.pho
+*.rep
+*.rpt
+*.cmp
+
+# === Embedded software build artifacts ===
+# GCC/Clang/ARMCC outputs
+*.o
+*.obj
+*.d
+*.dep
+*.elf
+*.axf
+*.out
+*.map
+*.lst
+*.lss
+*.map
+*.bin
+*.hex
+*.srec
+*.s19
+*.a
+*.lib
+
+# CMake
+/build/
+build/
+cmake-build-*/
+
+# VSCode local settings (optional: comment out if you prefer to share them)
+.vscode/
+
+# CLion/JetBrains
+.idea/
+
+# Python/Tools
+__pycache__/
+*.pyc
+*.pyo
+
+# Node (if any web tools in software/)
+node_modules/
+
